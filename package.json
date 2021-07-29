@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/6f5/seed-prep.git"
   },
-  "homepage": "http://6f5/seed-prep#readme",
+  "homepage": "6f5/seed-prep#readme",
   "dependencies": {
     "cli-alert": "^1.0.3",
     "cli-check-node": "^1.3.4",
