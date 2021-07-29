@@ -105,7 +105,7 @@ function generateUsers(options) {
     fields: ["fullName", "email", "password"],
     exportData: false,
     fileName: "no-name__.json",
-    path: __dirname
+    path: join(__dirname, "../")
   };
 
   const opts = { ...defaultOptions, ...options };
