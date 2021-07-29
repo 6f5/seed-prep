@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/6f5/seed-prep/issues"
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "devDependencies": {},
   "scripts": {
     "test": "node ./test.js"
