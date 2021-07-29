@@ -1,0 +1,39 @@
+{
+  "name": "seed-prep",
+  "main": "index.js",
+  "description": "Generate fake random user data. Generate fake avatar/images, names, phone numbers, addresses, booleans, words, paragraphs, sentences, and more.",
+  "author": "Abdulla Saeed <arashrestart@gmail.com>",
+  "type": "module",
+  "keywords": [
+    "fake name generator",
+    "fake database data seeder",
+    "random data generator library",
+    "random user",
+    "random user data",
+    "fake user data for database",
+    "avatar placeholder",
+    "profile pic placeholder"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6f5/seed-prep.git"
+  },
+  "homepage": "http://6f5/seed-prep#readme",
+  "dependencies": {
+    "cli-alert": "^1.0.3",
+    "cli-check-node": "^1.3.4",
+    "faker": "^5.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/6f5/seed-prep/issues"
+  },
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
