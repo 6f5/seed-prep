@@ -7,7 +7,7 @@ Prepares random fake data and exports it to json files. So you can generate and 
 ```javascript
 import seedPrep from "seed-prep";
 
-// This will generate the data and save th result to a json file in the same directory if you don't pass the absolute path
+// This will generate the data and save the result to a json file in the same directory if you don't pass the absolute path
 
 // Options Object
 const options = {
@@ -20,7 +20,7 @@ const options = {
     {
       want: "alphaNumeric", // The type of data you want
       as: "password", // What do you want to name the field
-      arg: 8 // Some of the functions take argument in this scenario the alphaNumeric functino takes an argument for the length of the characters you want. To pass arguments you put the argument in the "arg" property
+      arg: 8 // Some of the functions take argument in this scenario the alphaNumeric function takes an argument for the length of the characters you want. To pass arguments you put the argument in the "arg" property
     },
     "username" // Most of the functions such as username don't require an argument so you don't need to pass an object unless you want to have a different name in the object
   ], // The fields you want in each object
@@ -43,7 +43,7 @@ const options = {
 const options = {
   locale: "en_US",
   fields: [
-    "username",
+    {want: "userName", as: "username"},
     "email",
     { want: "phoneNumber", as: "phone" },
     { want: "words", as: "description", arg: 10 },
@@ -69,7 +69,7 @@ seedPrep(options);
 const options = {
   locale: "en_US",
   fields: [
-    "username",
+    "userName",
     "email",
     "phoneNumber",
     "words",
@@ -84,6 +84,7 @@ seedPrep(options);
 // Result
 [
   {
+    userName: "jack3923",
     email: 'Addie_Lindgren24@hotmail.com',
     phoneNumber: '(272) 831-1293',
     words: 'et tempora dolor',
