@@ -2,6 +2,12 @@
 
 Prepares random fake data and exports it to json files. So you can generate and export as many files as you want with the data you need to finish and test your projects faster. Take a look at all the available data you can get below (wants).
 
+## Install
+
+```
+npm install seed-prep
+```
+
 ## Example
 
 ```javascript
@@ -12,6 +18,7 @@ import seedPrep from "seed-prep";
 
 // Options Object
 const options = {
+  locale: "en_US", // You can set any locale you want but en_US is the default
   total: 10, // The number of objects or times to generate
   fields: [
     {
@@ -100,6 +107,55 @@ seedPrep(options);
 ]
 
 ```
+
+### Available Localizations
+
+- az
+- ar
+- cz
+- de
+- de_AT
+- de_CH
+- en
+- en_AU
+- en_AU_ocker
+- en_BORK
+- en_CA
+- en_GB
+- en_IE
+- en_IND
+- en_US
+- en_ZA
+- es
+- es_MX
+- fa
+- fi
+- fr
+- fr_CA
+- fr_CH
+- ge
+- hy
+- hr
+- id_ID
+- it
+- ja
+- ko
+- nb_NO
+- ne
+- nl
+- nl_BE
+- pl
+- pt_BR
+- pt_PT
+- ro
+- ru
+- sk
+- sv
+- tr
+- uk
+- vi
+- zh_CN
+- zh_TW
 
 ### Available Wants
 
