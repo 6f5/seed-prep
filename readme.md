@@ -7,7 +7,8 @@ Prepares random fake data and exports it to json files. So you can generate and 
 ```javascript
 import seedPrep from "seed-prep";
 
-// This will generate the data and save the result to a json file in the same directory if you don't pass the absolute path
+// This will generate the data and save the result to a json file in the root directory
+// if you don't pass the absolute path
 
 // Options Object
 const options = {
@@ -15,17 +16,22 @@ const options = {
   fields: [
     {
       want: "phoneNumber", // What type of data do you want
-      as: "phone" // What do you want to name the field if you leave this empty it will be the same as the want field by default
+      as: "phone" // What do you want to name the field if you leave this empty
+      // it will be the same as the 'want' field by default
     },
     {
       want: "alphaNumeric", // The type of data you want
       as: "password", // What do you want to name the field
       arg: 8 // Some of the functions take argument in this scenario the alphaNumeric function takes an argument for the length of the characters you want. To pass arguments you put the argument in the "arg" property
     },
-    "username" // Most of the functions such as username don't require an argument so you don't need to pass an object unless you want to have a different name in the object
+    {
+      want: "userName",
+      as: "username"
+     }
   ], // The fields you want in each object
   exportData: true, // Set exportData to true if you want the data to be saved to disk
-  path: "C://users/demo/desktion/_data", // The path to the folder you want the data to be saved in. If you don't pass a path the data will be saved to the current directory the script was executed in.
+  path: "C://users/demo/desktion/_data", // The path to the folder you want the data to be saved in.
+  // If you don't pass a path the data will be saved to the current directory the script was executed in.
   fileName: "users.json" // Here you can put the name of the file when the data is exported
 };
 
