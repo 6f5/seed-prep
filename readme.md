@@ -1,4 +1,4 @@
-# Seed Prep
+# Seed Prep (Obsolete - No Longer Maintained)
 
 Prepares random fake data and exports it to json files. So you can generate and export as many files as you want with the data you need to finish and test your projects faster. Take a look at all the available data you can get below (wants).
 
